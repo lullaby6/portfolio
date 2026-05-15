@@ -7,33 +7,33 @@ import {
 } from "@tabler/icons-react";
 ---
 
-<main class="w-sreeen h-screen bg-black text-neutral-300">
+<main class="w-sreeen h-screen bg-black text-neutral-300 relative">
 	<span
-		class="absolute top-0 left-0 h-64 w-64 rounded-full m-32 bg-gradient-to-r from-blue-500 via-purple-500 to-purple-800 blur-3xl opacity-50 animate-blob z-1">
+		class="absolute top-0 left-0 w-16 h-16 md:h-64 md:w-64 m-0 md:m-32 rounded-full bg-gradient-to-r from-blue-500 via-purple-500 to-purple-800 opacity-50 animate-blob z-1">
 	</span>
 
 	<span
-		class="absolute bottom-0 left-0 h-64 w-64 rounded-full mx-128 my-32 bg-gradient-to-r from-blue-500 via-purple-500 to-purple-800 blur-3xl opacity-50 animate-blob z-1">
+		class="absolute bottom-0 left-0 h-64 w-64 rounded-full mx-128 my-32 bg-gradient-to-r from-blue-500 via-purple-500 to-purple-800 opacity-50 animate-blob z-1 hidden md:block">
 	</span>
 
 	<span
-		class="absolute top-0 right-0 h-48 w-48 rounded-full mx-32 my-32 bg-gradient-to-r from-blue-500 via-purple-500 to-purple-800 blur-3xl opacity-50 animate-blob z-1">
+		class="absolute top-0 right-0 h-48 w-48 rounded-full mx-32 my-32 bg-gradient-to-r from-blue-500 via-purple-500 to-purple-800 opacity-50 animate-blob z-1 hidden md:block">
 	</span>
 
 	<span
-		class="absolute bottom-0 right-0 h-64 w-64 rounded-full m-64 bg-gradient-to-r from-blue-500 via-purple-500 to-purple-800 blur-3xl opacity-50 animate-blob z-1">
+		class="absolute bottom-0 right-0 h-64 w-64 rounded-full m-64 bg-gradient-to-r from-blue-500 via-purple-500 to-purple-800 opacity-50 animate-blob z-1 hidden md:block">
 	</span>
 
 	<span
-		class="absolute top-0 left-0 w-screen h-screen backdrop-filter backdrop-blur-3xl z-2">
+		class="absolute top-0 left-0 w-screen h-screen backdrop-blur-3xl blur-3xl z-2">
 	</span>
 
 	<div
-		class="absolute top-0 left-0 w-sreeen h-screen text-neutral-300 p-32 grid grid-cols-5 grid-rows-5 gap-4 z-3">
+		class="absolute top-0 left-0 w-sreeen h-screen text-neutral-300 p-4 flex flex-col md:p-32 md:grid md:grid-cols-5 md:grid-rows-5 gap-4 z-3">
 		<div
-			class="relative overflow-hidden rounded-xl p-4 transition-all col-span-2 row-span-2">
+			class="relative overflow-hidden rounded-xl p-4 transition-all md:col-span-2 md:row-span-2">
 			<span
-				class="backdrop-filter backdrop-blur-3xl absolute top-0 left-0 w-full h-full bg-gradient-to-r from-blue-500 via-purple-500 to-purple-800 opacity-[0.05] transition-all -z-1">
+				class="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-blue-500 via-purple-500 to-purple-800 opacity-[0.05] transition-all -z-1">
 			</span>
 
 			<div class="flex flex-col h-full">
@@ -89,65 +89,65 @@ import {
 		</div>
 
 		<div
-			class="relative overflow-hidden rounded-xl p-4 transition-all col-span-2 col-start-3">
+			class="relative overflow-hidden rounded-xl p-4 transition-all md:col-span-2 md:col-start-3">
 			<span
-				class="backdrop-filter backdrop-blur-3xl absolute top-0 left-0 w-full h-full bg-gradient-to-r from-blue-500 via-purple-500 to-purple-800 opacity-[0.05] transition-all -z-1">
+				class="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-blue-500 via-purple-500 to-purple-800 opacity-[0.05] transition-all -z-1">
 			</span>
 			<!-- 2 -->
 		</div>
 
 		<div
-			class="relative overflow-hidden rounded-xl p-4 transition-all col-start-5 row-start-5">
+			class="relative overflow-hidden rounded-xl p-4 transition-all md:col-start-5 md:row-start-5">
 			<span
-				class="backdrop-filter backdrop-blur-3xl absolute top-0 left-0 w-full h-full bg-gradient-to-r from-blue-500 via-purple-500 to-purple-800 opacity-[0.05] transition-all -z-1">
+				class="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-blue-500 via-purple-500 to-purple-800 opacity-[0.05] transition-all -z-1">
 			</span>
 			<!-- 3 -->
 		</div>
 
 		<div
-			class="relative overflow-hidden rounded-xl p-4 transition-all col-span-2 col-start-3 row-start-2">
+			class="relative overflow-hidden rounded-xl p-4 transition-all md:col-span-2 md:col-start-3 md:row-start-2">
 			<span
-				class="backdrop-filter backdrop-blur-3xl absolute top-0 left-0 w-full h-full bg-gradient-to-r from-blue-500 via-purple-500 to-purple-800 opacity-[0.05] transition-all -z-1">
+				class="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-blue-500 via-purple-500 to-purple-800 opacity-[0.05] transition-all -z-1">
 			</span>
 			<!-- 4 -->
 		</div>
 
 		<div
-			class="relative overflow-hidden rounded-xl p-4 transition-all row-span-2 col-start-5 row-start-1">
+			class="relative overflow-hidden rounded-xl p-4 transition-all md:row-span-2 md:col-start-5 md:row-start-1">
 			<span
-				class="backdrop-filter backdrop-blur-3xl absolute top-0 left-0 w-full h-full bg-gradient-to-r from-blue-500 via-purple-500 to-purple-800 opacity-[0.05] transition-all -z-1">
+				class="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-blue-500 via-purple-500 to-purple-800 opacity-[0.05] transition-all -z-1">
 			</span>
 			<!-- 5 -->
 		</div>
 
 		<div
-			class="relative overflow-hidden rounded-xl p-4 transition-all row-span-3 col-start-1 row-start-3">
+			class="relative overflow-hidden rounded-xl p-4 transition-all row-span-3 col-start-1 md:row-start-3">
 			<span
-				class="backdrop-filter backdrop-blur-3xl absolute top-0 left-0 w-full h-full bg-gradient-to-r from-blue-500 via-purple-500 to-purple-800 opacity-[0.05] transition-all -z-1">
+				class="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-blue-500 via-purple-500 to-purple-800 opacity-[0.05] transition-all -z-1">
 			</span>
 			<!-- 6 -->
 		</div>
 
 		<div
-			class="relative overflow-hidden rounded-xl p-4 transition-all col-span-2 row-span-3 col-start-2 row-start-3">
+			class="relative overflow-hidden rounded-xl p-4 transition-all md:col-span-2 row-span-3 col-start-2 md:row-start-3">
 			<span
-				class="backdrop-filter backdrop-blur-3xl absolute top-0 left-0 w-full h-full bg-gradient-to-r from-blue-500 via-purple-500 to-purple-800 opacity-[0.05] transition-all -z-1">
+				class="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-blue-500 via-purple-500 to-purple-800 opacity-[0.05] transition-all -z-1">
 			</span>
 			<!-- 7 -->
 		</div>
 
 		<div
-			class="relative overflow-hidden rounded-xl p-4 transition-all col-span-2 row-span-2 col-start-4 row-start-3">
+			class="relative overflow-hidden rounded-xl p-4 transition-all md:col-span-2 md:row-span-2 col-start-4 md:row-start-3">
 			<span
-				class="backdrop-filter backdrop-blur-3xl absolute top-0 left-0 w-full h-full bg-gradient-to-r from-blue-500 via-purple-500 to-purple-800 opacity-[0.05] transition-all -z-1">
+				class="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-blue-500 via-purple-500 to-purple-800 opacity-[0.05] transition-all -z-1">
 			</span>
 			<!-- 8 -->
 		</div>
 
 		<div
-			class="relative overflow-hidden rounded-xl p-4 transition-all col-start-4 row-start-5">
+			class="relative overflow-hidden rounded-xl p-4 transition-all col-start-4 md:row-start-5">
 			<span
-				class="backdrop-filter backdrop-blur-3xl absolute top-0 left-0 w-full h-full bg-gradient-to-r from-blue-500 via-purple-500 to-purple-800 opacity-[0.05] transition-all -z-1">
+				class="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-blue-500 via-purple-500 to-purple-800 opacity-[0.05] transition-all -z-1">
 			</span>
 			<!-- 9 -->
 		</div>
