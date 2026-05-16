@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://lullaby6.dev/sitemap.xml
