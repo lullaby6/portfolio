@@ -44,7 +44,7 @@ import {
 
 					<p class="text-neutral-400 text-pretty">
 						I'm currently working at <a
-							class="underline1 text-purple-800 hover:opacity-50"
+							class="text-purple-800 hover:opacity-50"
 							href="https://www.morningvalue.com/"
 							target="_blank">
 							Morning Value
@@ -95,14 +95,33 @@ import {
 			</span>
 
 			<div class="flex flex-col h-full">
-				<div class="flex flex-col gap-2">
-					<h1 class="text-2xl text-balance inter-600">
-						NPM Packages
-					</h1>
+				<div class="flex flex-col gap-2 relative">
+					<a
+						class="absolute top-0 right-0 w-full h-full flex jusitfy-end float-right text-right opacity-50 hover:opacity-100 transition-opacity"
+						href="https://www.npmjs.com/~lullaby6"
+						target="_blank">
+						<span class="absolute top-0 right-0">
+							<IconArrowUpRight stroke={2} size={26} />
+						</span>
+					</a>
 
-					<p class="text-neutral-400 text-pretty">
-						Lorem ipsum dolor sit, amet consectetur adipisicing
-						elit.
+					<h1 class="text-xl text-balance inter-600">NPM Packages</h1>
+
+					<p class="text-neutral-400 text-pretty text-sm">
+						I have published six packages on npm. The most
+						interesting ones I can highlight are <a
+							class="text-amber-600 hover:opacity-50"
+							href="https://www.npmjs.com/package/locale-drive"
+							target="_blank">
+							Locale Drive
+						</a>
+						which provides a portal for transferring files within your
+						local network, and <a
+							class="text-blue-800 hover:opacity-50"
+							href="https://www.npmjs.com/package/locale-drive"
+							target="_blank">
+							custom-html-element
+						</a> which allows you to create reusable elements.
 					</p>
 				</div>
 			</div>
@@ -123,14 +142,23 @@ import {
 			</span>
 
 			<div class="flex flex-col h-full">
-				<div class="flex flex-col gap-2">
-					<h1 class="text-2xl text-balance inter-600">
+				<div class="flex flex-col gap-2 relative">
+					<a
+						class="absolute top-0 right-0 w-full h-full flex jusitfy-end float-right text-right opacity-50 hover:opacity-100 transition-opacity"
+						href="https://packagist.org/packages/lullaby6/zschema"
+						target="_blank">
+						<span class="absolute top-0 right-0">
+							<IconArrowUpRight stroke={2} size={26} />
+						</span>
+					</a>
+
+					<h1 class="text-xl text-balance inter-600">
 						Composer PHP Packages
 					</h1>
 
-					<p class="text-neutral-400 text-pretty">
-						Lorem ipsum dolor sit, amet consectetur adipisicing
-						elit.
+					<p class="text-neutral-400 text-pretty text-sm">
+						I've only released a single package for validating data
+						types and schemas, inspired by Zod from TypeScript.
 					</p>
 				</div>
 			</div>
@@ -209,7 +237,7 @@ import {
 					</span>
 				</a>
 
-				<h1 class="text-2xl text-balance inter-600">Minecraft Mods</h1>
+				<h1 class="text-xl text-balance inter-600">Minecraft Mods</h1>
 
 				<p class="text-neutral-400 text-pretty text-sm">
 					In my free time, I also create Minecraft mods; I've had over
