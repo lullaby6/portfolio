@@ -11,7 +11,8 @@ const education = [
 	},
 	{
 		institution: "Aprende Programando, UTN, Argentina",
-		title: "Full-Stack Web Developer Certificate",
+		title: "Full-Stack Web Developer",
+		href: "https://drive.google.com/file/d/12OoFRmzsZZfYMFRwysFwWiv7QR7MJATR/view",
 		period: "05/2022 - 07/2022",
 		description:
 			'Course at the UTN where I learned the "MERN" stack (Node.js, Express.js, React, and MongoDB).',
@@ -31,6 +32,14 @@ const education = [
 							{item.institution}
 						</span>
 						<span class="text-purple-800 text-sm">{item.title}</span>
+					{item.href && (
+						<a
+							class="text-blue-800 underline hover:opacity-50 text-sm w-fit"
+							href={item.href}
+							target="_blank">
+							Certificate
+						</a>
+					)}
 						<span class="text-neutral-500 text-xs">
 							{item.period}
 						</span>
