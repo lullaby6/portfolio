@@ -1,0 +1,38 @@
+---
+import { IconArrowUpRight } from "@tabler/icons-react";
+import Card from "../Card.astro";
+---
+
+<Card class="p-6 row-span-3 col-start-1 md:row-start-3">
+	<div class="flex flex-col h-full">
+		<div class="flex flex-col gap-2">
+			<h1 class="text-2xl text-balance inter-600">
+				Game Development
+			</h1>
+
+			<p class="text-neutral-400 text-pretty">
+				As another hobby, I also try developing 2D and 3D indie
+				games using engines like Phaser, Godot, and Unity. So
+				far, I've only released a single 2D bullet hell video
+				game using Phaser.js
+			</p>
+
+			<div class="relative h-full rounded-xl overflow-hidden mt-6">
+				<a
+					class="absolute top-0 right-0 m-2 w-full h-full flex jusitfy-end float-right text-right opacity-50 hover:opacity-100 transition-opacity"
+					href="https://starbits.site"
+					target="_blank">
+					<span class="absolute top-0 right-0">
+						<IconArrowUpRight stroke={2} size={26} />
+					</span>
+				</a>
+
+				<img
+					class="h-full"
+					src="https://starbits.site/cover.jpg"
+					alt="Game Development Starbits"
+				/>
+			</div>
+		</div>
+	</div>
+</Card>

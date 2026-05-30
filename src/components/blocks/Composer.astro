@@ -1,0 +1,28 @@
+---
+import { IconArrowUpRight } from "@tabler/icons-react";
+import Card from "../Card.astro";
+---
+
+<Card class="p-6 md:col-span-2 md:col-start-3 md:row-start-2">
+	<div class="flex flex-col h-full">
+		<div class="flex flex-col gap-2 relative">
+			<a
+				class="absolute top-0 right-0 w-full h-full flex jusitfy-end float-right text-right opacity-50 hover:opacity-100 transition-opacity"
+				href="https://packagist.org/packages/lullaby6/zschema"
+				target="_blank">
+				<span class="absolute top-0 right-0">
+					<IconArrowUpRight stroke={2} size={26} />
+				</span>
+			</a>
+
+			<h1 class="text-xl text-balance inter-600">
+				Composer PHP Packages
+			</h1>
+
+			<p class="text-neutral-400 text-pretty text-sm">
+				I've released a single package for validating data types
+				and schemas, inspired by Zod from TypeScript.
+			</p>
+		</div>
+	</div>
+</Card>

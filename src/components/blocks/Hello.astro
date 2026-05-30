@@ -1,0 +1,63 @@
+---
+import {
+	IconBrandGithub,
+	IconBrandLinkedin,
+	IconFileCv,
+	IconMail,
+} from "@tabler/icons-react";
+import Card from "../Card.astro";
+---
+
+<Card class="p-6 md:col-span-2 md:row-span-2">
+	<div class="flex flex-col h-full gap-4 md:gap-0">
+		<div class="flex flex-col gap-2">
+			<h1 class="text-2xl text-balance inter-600">
+				Hi! 👋 I'm Luciano Brumer, alias lullaby6.
+			</h1>
+
+			<p class="text-neutral-400 text-pretty">
+				I'm currently working at <a
+					class="text-purple-800 hover:opacity-50"
+					href="https://www.morningvalue.com/"
+					target="_blank">
+					Morning Value
+				</a>as a Software Developer, using Golang, JavaScript,
+				Python, React, and more. I started programming at 10
+				years old with Scratch, then Python with Pygame. Later I
+				discovered web development and cybersecurity, and they
+				became my passion.
+			</p>
+		</div>
+
+		<div
+			class="flex items-end gap-6 md:gap-2 w-full justify-center md:justify-end h-full">
+			<a
+				class="hover:opacity-50 cursor-pointer"
+				href="mailto:lullaby6.t@gmail.com"
+				target="_blank">
+				<IconMail stroke={1} size={26} />
+			</a>
+
+			<a
+				class="hover:opacity-50 cursor-pointer"
+				href="https://github.com/lullaby6"
+				target="_blank">
+				<IconBrandGithub stroke={1} size={26} />
+			</a>
+
+			<a
+				class="hover:opacity-50 cursor-pointer"
+				href="https://www.linkedin.com/in/luciano-brumer/"
+				target="_blank">
+				<IconBrandLinkedin stroke={1} size={26} />
+			</a>
+
+			<a
+				class="hover:opacity-50 cursor-pointer"
+				href="https://docs.google.com/document/d/1ZZDLn9L4pu_eg4UZwJYR_k2voPh3ZyPFYArPMVirusA/edit?usp=sharing"
+				target="_blank">
+				<IconFileCv stroke={1} size={26} />
+			</a>
+		</div>
+	</div>
+</Card>
