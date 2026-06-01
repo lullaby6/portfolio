@@ -3,26 +3,25 @@ import { IconArrowUpRight } from "@tabler/icons-react";
 import Card from "@/components/Card.astro";
 ---
 
-<Card class="order-8 md:order-none p-4 md:col-start-5 md:row-start-5">
-	<div class="flex flex-col h-full">
-		<div class="flex flex-col gap-1 relative">
-			<a
-				class="absolute top-0 right-0 w-full h-full flex jusitfy-end float-right text-right opacity-50 hover:opacity-100 transition-opacity"
-				href="https://lullaby6-generative-art-gallery.vercel.app/"
-				target="_blank">
-				<span class="absolute top-0 right-0">
-					<IconArrowUpRight stroke={2} size={26} />
-				</span>
-			</a>
+<Card class="!p-4 md:col-start-3 md:row-start-4">
+  <div class="flex flex-col h-full">
+    <div class="flex flex-col gap-1 relative">
+      <a
+        class="absolute top-0 right-0 w-full h-full flex jusitfy-end float-right text-right opacity-50 hover:opacity-100 transition-opacity"
+        href="https://lullaby6-generative-art-gallery.vercel.app/"
+        target="_blank"
+      >
+        <span class="absolute top-0 right-0">
+          <IconArrowUpRight stroke={2} size={26} />
+        </span>
+      </a>
 
-			<h1 class="text-xl text-balance inter-600">
-				Generative Art Gallery
-			</h1>
+      <h1 class="text-xl text-balance inter-600">Generative Art Gallery</h1>
 
-			<p class="text-sm text-neutral-400 text-pretty">
-				I'm just getting started with creative coding, and over
-				time I'd like to add more work to my gallery.
-			</p>
-		</div>
-	</div>
+      <p class="text-sm text-neutral-400 text-pretty">
+        I'm just getting started with creative coding, and over time I'd like to
+        add more work to my gallery.
+      </p>
+    </div>
+  </div>
 </Card>

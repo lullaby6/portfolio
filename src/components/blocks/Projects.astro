@@ -4,6 +4,18 @@ import Card from "@/components/Card.astro";
 
 const projects = [
   {
+    name: "ZSchema",
+    href: "https://github.com/lullaby6/zschema",
+    description:
+      "PHP library to validate schemas and data types, inspired by Zod from TypeScript.",
+  },
+  {
+    name: "Locale Drive",
+    href: "https://github.com/lullaby6/locale-drive",
+    description:
+      'Web app to share and transfer files across your local network, like a "Google Drive" for your LAN, built with Express.js and React.',
+  },
+  {
     name: "ChessGPT",
     href: "https://github.com/lullaby6/ChessGPT",
     description: "Python game that lets you play chess against ChatGPT.",
@@ -26,6 +38,11 @@ const projects = [
       "Python CLI that runs git add, commit, and push in a single command.",
   },
   {
+    name: "Starbits",
+    href: "https://starbits.site",
+    description: "2D bullet hell game built with Phaser.js.",
+  },
+  {
     name: "Fondo de Cine",
     href: "https://fondodecine.com.ar",
     description:
@@ -46,9 +63,7 @@ const projects = [
 ];
 ---
 
-<Card
-  class="order-3 md:order-none p-6 md:col-span-2 row-span-3 col-start-2 md:row-start-3"
->
+<Card class="md:col-span-3 md:row-span-3 md:col-start-3 md:row-start-1">
   <div class="flex flex-col h-full gap-3">
     <h1 class="text-2xl text-balance inter-600">Projects</h1>
 

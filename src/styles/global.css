@@ -1,6 +1,8 @@
 @import "tailwindcss";
 
 @theme {
+    --breakpoint-3xl: 1600px;
+
     --animate-blob: blob 10s ease-in-out infinite;
 
     @keyframes blob {
