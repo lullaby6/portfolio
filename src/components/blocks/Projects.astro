@@ -1,72 +1,69 @@
 ---
 import { IconArrowUpRight } from "@tabler/icons-react";
-import Card from "../Card.astro";
+import Card from "@/components/Card.astro";
 
 const projects = [
-	{
-		name: "ChessGPT",
-		href: "https://github.com/lullaby6/ChessGPT",
-		description: "Python game that lets you play chess against ChatGPT.",
-	},
-	{
-		name: "Sviewer",
-		href: "https://sviewer.vercel.app/",
-		description: "Image Viewer built with Vue3 and Tailwind CSS.",
-	},
-	{
-		name: "Speed Coder",
-		href: "https://lullaby6.github.io/speed-coder/",
-		description:
-			"My own take on MonkeyType, a typing speed game made for programmers.",
-	},
-	{
-		name: "GitPush",
-		href: "https://github.com/lullaby6/git-push",
-		description:
-			"Python CLI that runs git add, commit, and push in a single command.",
-	},
-	{
-		name: "Fondo de Cine",
-		href: "https://fondodecine.com.ar",
-		description:
-			"Landing page built with Astro for an independent film festival.",
-	},
-	{
-		name: "Video Speed Control",
-		href: "https://github.com/lullaby6/video-speed-control",
-		description:
-			"Chromium extension to control the playback speed of any video without limits (handy on YouTube).",
-	},
-	{
-		name: "Windows Explorer Toggle",
-		href: "https://lullaby6.github.io/windows-explorer-toggle",
-		description:
-			"C# desktop app that disables Windows Explorer to free up system resources.",
-	},
+  {
+    name: "ChessGPT",
+    href: "https://github.com/lullaby6/ChessGPT",
+    description: "Python game that lets you play chess against ChatGPT.",
+  },
+  {
+    name: "Sviewer",
+    href: "https://sviewer.vercel.app/",
+    description: "Image Viewer built with Vue3 and Tailwind CSS.",
+  },
+  {
+    name: "Speed Coder",
+    href: "https://lullaby6.github.io/speed-coder/",
+    description:
+      "My own take on MonkeyType, a typing speed game made for programmers.",
+  },
+  {
+    name: "GitPush",
+    href: "https://github.com/lullaby6/git-push",
+    description:
+      "Python CLI that runs git add, commit, and push in a single command.",
+  },
+  {
+    name: "Fondo de Cine",
+    href: "https://fondodecine.com.ar",
+    description:
+      "Landing page built with Astro for an independent film festival.",
+  },
+  {
+    name: "Video Speed Control",
+    href: "https://github.com/lullaby6/video-speed-control",
+    description:
+      "Chromium extension to control the playback speed of any video without limits (handy on YouTube).",
+  },
+  {
+    name: "Windows Explorer Toggle",
+    href: "https://lullaby6.github.io/windows-explorer-toggle",
+    description:
+      "C# desktop app that disables Windows Explorer to free up system resources.",
+  },
 ];
 ---
 
 <Card class="p-6 md:col-span-2 row-span-3 col-start-2 md:row-start-3">
-	<div class="flex flex-col h-full gap-3">
-		<h1 class="text-2xl text-balance inter-600">Projects</h1>
+  <div class="flex flex-col h-full gap-3">
+    <h1 class="text-2xl text-balance inter-600">Projects</h1>
 
-		<div class="flex flex-col gap-3 overflow-y-auto pr-1">
-			{
-				projects.map((project) => (
-					<a
-						class="group flex flex-col"
-						href={project.href}
-						target="_blank">
-						<span class="flex items-center gap-1 inter-600 group-hover:opacity-50 transition-opacity">
-							{project.name}
-							<IconArrowUpRight stroke={2} size={16} />
-						</span>
-						<span class="text-neutral-400 text-pretty text-sm">
-							{project.description}
-						</span>
-					</a>
-				))
-			}
-		</div>
-	</div>
+    <div class="flex flex-col gap-2 overflow-y-auto pr-1 min-h-0 flex-1">
+      {
+        projects.map((project) => (
+          <a class="group flex flex-col" href={project.href} target="_blank">
+            <span class="flex items-center gap-1 inter-600 text-purple-800 group-hover:opacity-50 transition-opacity">
+              {project.name}
+              <IconArrowUpRight stroke={2} size={16} />
+            </span>
+            <span class="text-neutral-400 text-pretty text-sm">
+              {project.description}
+            </span>
+          </a>
+        ))
+      }
+    </div>
+  </div>
 </Card>

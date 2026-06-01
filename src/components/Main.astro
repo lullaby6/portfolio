@@ -1,29 +1,30 @@
 ---
-import Background from "./Background.astro";
-import Hello from "./blocks/Hello.astro";
-import NPM from "./blocks/NPM.astro";
-import GenerativeArt from "./blocks/GenerativeArt.astro";
-import Composer from "./blocks/Composer.astro";
-import Education from "./blocks/Education.astro";
-import GameDevelopment from "./blocks/GameDevelopment.astro";
-import Projects from "./blocks/Projects.astro";
-import Experience from "./blocks/Experience.astro";
-import MinecraftMods from "./blocks/MinecraftMods.astro";
+import Background from "@/components/Background.astro";
+import Hello from "@/components/blocks/Hello.astro";
+import NPM from "@/components/blocks/NPM.astro";
+import GenerativeArt from "@/components/blocks/GenerativeArt.astro";
+import Composer from "@/components/blocks/Composer.astro";
+import Education from "@/components/blocks/Education.astro";
+import GameDevelopment from "@/components/blocks/GameDevelopment.astro";
+import Projects from "@/components/blocks/Projects.astro";
+import Experience from "@/components/blocks/Experience.astro";
+import MinecraftMods from "@/components/blocks/MinecraftMods.astro";
 ---
 
 <main class="w-screen min-h-screen text-neutral-300 relative">
-	<Background />
+  <Background />
 
-	<div
-		class="absolute top-0 left-0 w-screen min-h-screen md:min-h-auto md:h-screen text-neutral-300 flex flex-col p-4 lg:p-8 xl:p-16 2xl:p-32 md:grid md:grid-cols-5 md:grid-rows-5 gap-4 z-10">
-		<Hello />
-		<NPM />
-		<GenerativeArt />
-		<Composer />
-		<Education />
-		<GameDevelopment />
-		<Projects />
-		<Experience />
-		<MinecraftMods />
-	</div>
+  <div
+    class="absolute top-0 left-0 w-screen min-h-screen md:min-h-auto md:h-screen text-neutral-300 flex flex-col p-4 lg:p-8 xl:p-16 2xl:p-16 3xl:p-32 md:grid md:grid-cols-5 md:grid-rows-5 gap-4 z-10"
+  >
+    <Hello />
+    <NPM />
+    <GenerativeArt />
+    <Composer />
+    <Education />
+    <GameDevelopment />
+    <Projects />
+    <Experience />
+    <MinecraftMods />
+  </div>
 </main>
