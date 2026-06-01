@@ -1,101 +1,32 @@
 ---
 import { IconArrowUpRight } from "@tabler/icons-react";
 import Card from "@/components/Card.astro";
-
-const projects = [
-	{
-		name: "ZSchema",
-		href: "https://github.com/lullaby6/zschema",
-		description:
-			"PHP library to validate schemas and data types, inspired by Zod from TypeScript.",
-	},
-	{
-		name: "Locale Drive",
-		href: "https://www.npmjs.com/package/locale-drive",
-		description:
-			'Web app to share and transfer files across your local network, like a "Google Drive" for your LAN, built with Express.js and React.',
-	},
-	{
-		name: "ChessGPT",
-		href: "https://github.com/lullaby6/ChessGPT",
-		description: "Python game that lets you play chess against ChatGPT.",
-	},
-	{
-		name: "Sviewer",
-		href: "https://sviewer.vercel.app",
-		description: "Image Viewer built with Vue3 and Tailwind CSS.",
-	},
-	{
-		name: "Speed Coder",
-		href: "https://lullaby6.github.io/speed-coder",
-		description:
-			"My own take on MonkeyType, a typing speed game made for programmers.",
-	},
-	{
-		name: "GitPush",
-		href: "https://github.com/lullaby6/git-push",
-		description:
-			"Python CLI that runs git add, commit, and push in a single command.",
-	},
-	{
-		name: "Starbits",
-		href: "https://starbits.site",
-		description: "2D bullet hell game built with Phaser.js.",
-	},
-	{
-		name: "Fondo de Cine",
-		href: "https://fondodecine.com.ar",
-		description:
-			"Landing page built with Astro for an independent film festival.",
-	},
-	{
-		name: "Video Speed Control",
-		href: "https://github.com/lullaby6/video-speed-control",
-		description:
-			"Chromium extension to control the playback speed of any video without limits (handy on YouTube).",
-	},
-	{
-		name: "Windows Explorer Toggle",
-		href: "https://lullaby6.github.io/windows-explorer-toggle",
-		description:
-			"C# Desktop App that disables Windows Explorer to free up system resources.",
-	},
-	{
-		name: "Generative Art Gallery",
-		href: "https://lullaby6-generative-art-gallery.vercel.app",
-		description:
-			"A growing gallery of my creative coding experiments, I'm just getting started.",
-	},
-	{
-		name: "Minecraft Mods",
-		href: "https://www.curseforge.com/members/lullaby6/projects?sortBy=TotalDownloads",
-		description:
-			"A collection of Minecraft mods I've created, with over 3 million downloads.",
-	},
-];
 ---
 
-<Card class="md:col-span-3 md:row-span-3 md:col-start-3 md:row-start-1">
-	<div class="flex flex-col h-full gap-3">
-		<h1 class="text-2xl text-balance inter-600">Projects</h1>
+<Card class="!p-0 md:col-span-3 md:row-span-3 md:col-start-3 md:row-start-1">
+	<a
+		class="group block w-full h-full relative cursor-pointer"
+		href="/projects"
+		aria-label="View all projects">
+		<iframe
+			src="/projects"
+			title="Projects preview"
+			tabindex="-1"
+			class="absolute inset-0 w-full h-full border-0 pointer-events-none select-none overflow-hidden">
+		</iframe>
 
-		<div class="flex flex-col gap-2 overflow-y-auto pr-1 min-h-0 flex-1">
-			{
-				projects.map((project) => (
-					<a
-						class="group flex flex-col"
-						href={project.href}
-						target="_blank">
-						<span class="flex items-center gap-1 inter-600 text-purple-800 group-hover:opacity-50 transition-opacity">
-							{project.name}
-							<IconArrowUpRight stroke={2} size={16} />
-						</span>
-						<span class="text-neutral-400 text-pretty text-sm">
-							{project.description}
-						</span>
-					</a>
-				))
-			}
-		</div>
-	</div>
+		<span
+			class="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors">
+		</span>
+
+		<span
+			class="absolute bottom-0 left-0 w-full flex items-center justify-between gap-2 p-4 bg-gradient-to-t from-black/80 to-transparent">
+			<span class="text-xl text-balance inter-600">Projects</span>
+			<span
+				class="flex items-center gap-1 text-sm text-neutral-300 group-hover:opacity-50 transition-opacity">
+				View all
+				<IconArrowUpRight stroke={2} size={18} />
+			</span>
+		</span>
+	</a>
 </Card>
