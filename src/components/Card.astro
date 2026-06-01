@@ -1,21 +1,19 @@
 ---
 interface Props {
-  class?: string;
+	class?: string;
 }
 
 const { class: className = "" } = Astro.props;
 ---
 
 <div
-  class:list={[
-    "relative overflow-hidden rounded-xl shadow-2xl p-4 3xl:p-6",
-    className,
-  ]}
->
-  <span
-    class="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-blue-500 via-purple-500 to-purple-800 opacity-[0.1] pointer-events-none"
-  >
-  </span>
+	class:list={[
+		"relative overflow-hidden rounded-xl shadow-2xl p-4 3xl:p-6 animate-fadein",
+		className,
+	]}>
+	<span
+		class="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-blue-500 via-purple-500 to-purple-800 opacity-[0.1] pointer-events-none">
+	</span>
 
-  <slot />
+	<slot />
 </div>
