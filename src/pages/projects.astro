@@ -31,9 +31,21 @@ import { projects } from "@/data/projects";
 							class="group block mb-4 break-inside-avoid"
 							href={project.href}
 							target="_blank">
-							<Card class="h-full">
-								<div class="flex flex-col gap-2 relative">
-									<span class="absolute top-0 right-0 opacity-50 group-hover:opacity-100 transition-opacity">
+							<Card class="!p-0 h-full">
+								<div class="relative h-48 overflow-hidden border-b border-white/10">
+									<iframe
+										src={project.href}
+										title={`${project.name} preview`}
+										tabindex="-1"
+										loading="lazy"
+										class="absolute top-0 left-0 w-[200%] h-[200%] origin-top-left scale-50 border-0 pointer-events-none select-none bg-neutral-900">
+									</iframe>
+
+									<span class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors" />
+								</div>
+
+								<div class="flex flex-col gap-2 relative p-4 3xl:p-6">
+									<span class="absolute top-4 right-4 3xl:top-6 3xl:right-6 opacity-50 group-hover:opacity-100 transition-opacity">
 										<IconArrowUpRight stroke={2} size={22} />
 									</span>
 
