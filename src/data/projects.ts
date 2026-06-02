@@ -14,7 +14,7 @@ export const projects: Project[] = [
 		href: "https://github.com/lullaby6/zschema",
 		description:
 			"PHP library to validate schemas and data types, inspired by Zod from TypeScript.",
-		tags: ["PHP", "Library"],
+		tags: ["PHP", "Composer Package"],
 		// image: "/assets/images/projects/zschema.webp", // GitHub page, no preview
 	},
 	{
@@ -22,14 +22,14 @@ export const projects: Project[] = [
 		href: "https://www.npmjs.com/package/locale-drive",
 		description:
 			'Web app to share and transfer files across your local network, like a "Google Drive" for your LAN, built with Express.js and React.',
-		tags: ["Express.js", "React", "JavaScript"],
+		tags: ["NPM Package", "Express.js", "React", "JavaScript"],
 		// image: "/assets/images/projects/Locale Drive.webp", // npm page, no preview
 	},
 	{
 		name: "ChessGPT",
 		href: "https://github.com/lullaby6/ChessGPT",
 		description: "Python game that lets you play chess against ChatGPT.",
-		tags: ["Python", "OpenAI"],
+		tags: ["Python"],
 		// image: "/assets/images/projects/ChessGPT.webp", // GitHub page, no preview
 	},
 	{
@@ -44,7 +44,7 @@ export const projects: Project[] = [
 		href: "https://lullaby6.github.io/speed-coder",
 		description:
 			"My own take on MonkeyType, a typing speed game made for programmers.",
-		tags: ["JavaScript", "Game"],
+		tags: ["JavaScript"],
 		// image: "/assets/images/projects/Speed Coder.webp",
 	},
 	{
@@ -59,7 +59,7 @@ export const projects: Project[] = [
 		name: "Starbits",
 		href: "https://starbits.site",
 		description: "2D bullet hell game built with Phaser.js.",
-		tags: ["Phaser", "JavaScript", "Game"],
+		tags: ["Game", "JavaScript", "Phaser"],
 		// image: "/assets/images/projects/Starbits.webp",
 	},
 	{
@@ -67,7 +67,7 @@ export const projects: Project[] = [
 		href: "https://fondodecine.com.ar",
 		description:
 			"Landing page built with Astro for an independent film festival.",
-		tags: ["Astro", "Landing Page", "Tailwind CSS"],
+		tags: ["Landing Page", "Astro", "Tailwind CSS"],
 		// image: "/assets/images/projects/Fondo de Cine.webp",
 	},
 	{
@@ -75,7 +75,7 @@ export const projects: Project[] = [
 		href: "https://github.com/lullaby6/video-speed-control",
 		description:
 			"Chromium extension to control the playback speed of any video without limits (handy on YouTube).",
-		tags: ["JavaScript", "Chrome Extension"],
+		tags: ["Chrome Extension", "JavaScript"],
 		// image: "/assets/images/projects/Video Speed Control.webp", // GitHub page, no preview
 	},
 	{
@@ -83,7 +83,7 @@ export const projects: Project[] = [
 		href: "https://lullaby6.github.io/windows-explorer-toggle",
 		description:
 			"A C# windows desktop app to disable Windows Explorer to reduce RAM usage.",
-		tags: ["C#", "Desktop"],
+		tags: ["Desktop App", "C#", "Tailwind CSS"],
 		// image: "/assets/images/projects/Windows Explorer Toggle.webp",
 	},
 	{
@@ -91,7 +91,7 @@ export const projects: Project[] = [
 		href: "https://www.npmjs.com/package/express-dir-routing",
 		description:
 			"A file-based routing system for express.js using directories like NextJS 13 or SvelteKit.",
-		tags: ["Express.js", "JavaScript"],
+		tags: ["NPM Package", "Express.js", "JavaScript"],
 		// image: "/assets/images/projects/express-dir-routing.webp", // npm page, no preview
 	},
 	{
@@ -99,7 +99,7 @@ export const projects: Project[] = [
 		href: "https://www.npmjs.com/package/custom-html-element",
 		description:
 			"Create reusable and reactive Web Components using Custom Element API.",
-		tags: ["JavaScript", "Web Components"],
+		tags: ["NPM Package", "JavaScript"],
 		// image: "/assets/images/projects/custom-html-element.webp", // npm page, no preview
 	},
 	{
@@ -107,7 +107,7 @@ export const projects: Project[] = [
 		href: "https://www.npmjs.com/package/input-transform",
 		description:
 			"JavaScript library that provides various input transformations, such as formatting text, validating file uploads, and converting images to Base64 or WebP format.",
-		tags: ["JavaScript", "Library"],
+		tags: ["NPM Package", "JavaScript"],
 		// image: "/assets/images/projects/Input Transform.webp", // npm page, no preview
 	},
 	{
@@ -115,7 +115,7 @@ export const projects: Project[] = [
 		href: "https://lullaby6.github.io/generative-art-gallery/",
 		description:
 			"A growing gallery of my creative coding experiments, I'm just getting started.",
-		tags: ["JavaScript", "Creative Coding"],
+		tags: ["JavaScript", "Creative Coding", "Tailwind CSS"],
 		// image: "/assets/images/projects/Generative Art Gallery.webp",
 	},
 	{
@@ -131,7 +131,7 @@ export const projects: Project[] = [
 		href: "https://lullaby6.github.io/mc-block-creator/",
 		description:
 			"Minecraft Web Tool to generate custom blocks with display entities built with React.",
-		tags: ["React", "Minecraft"],
+		tags: ["React", "Minecraft", "Tailwind CSS"],
 		// image: "/assets/images/projects/MC Block Creator.webp",
 	},
 ];
