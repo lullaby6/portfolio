@@ -1,3 +1,3 @@
 # Portfolio
 
-[See portfolio](https://lullaby6.dev)
+[See Portfolio](https://lullaby6.dev)
