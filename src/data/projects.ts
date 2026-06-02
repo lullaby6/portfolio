@@ -70,7 +70,7 @@ export const projects: Project[] = [
 		name: "Windows Explorer Toggle",
 		href: "https://lullaby6.github.io/windows-explorer-toggle",
 		description:
-			"C# Desktop App that disables Windows Explorer to free up system resources.",
+			"A C# windows desktop app to disable Windows Explorer to reduce RAM usage.",
 		image: "/assets/images/projects/Windows Explorer Toggle.png",
 	},
 	{
