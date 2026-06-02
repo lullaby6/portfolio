@@ -28,7 +28,7 @@ export const projects: Project[] = [
 	},
 	{
 		name: "Sviewer",
-		href: "https://sviewer.vercel.app",
+		href: "https://lullaby6.github.io/sviewer",
 		description: "Image Viewer built with Vue3 and Tailwind CSS.",
 		image: "/assets/images/projects/Sviewer.png",
 	},
@@ -96,7 +96,7 @@ export const projects: Project[] = [
 	},
 	{
 		name: "Generative Art Gallery",
-		href: "https://lullaby6-generative-art-gallery.vercel.app",
+		href: "https://lullaby6.github.io/generative-art-gallery/",
 		description:
 			"A growing gallery of my creative coding experiments, I'm just getting started.",
 		image: "/assets/images/projects/Generative Art Gallery.png",
