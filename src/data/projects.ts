@@ -3,6 +3,7 @@ export interface Project {
 	href: string;
 	description: string;
 	iframe?: boolean;
+	image?: string;
 }
 
 export const projects: Project[] = [
@@ -12,6 +13,7 @@ export const projects: Project[] = [
 		description:
 			"PHP library to validate schemas and data types, inspired by Zod from TypeScript.",
 		iframe: false,
+		image: "/assets/images/projects/zschema.png",
 	},
 	{
 		name: "Locale Drive",
@@ -19,12 +21,14 @@ export const projects: Project[] = [
 		description:
 			'Web app to share and transfer files across your local network, like a "Google Drive" for your LAN, built with Express.js and React.',
 		iframe: false,
+		image: "/assets/images/projects/Locale Drive.png",
 	},
 	{
 		name: "ChessGPT",
 		href: "https://github.com/lullaby6/ChessGPT",
 		description: "Python game that lets you play chess against ChatGPT.",
 		iframe: false,
+		image: "/assets/images/projects/ChessGPT.png",
 	},
 	{
 		name: "Sviewer",
@@ -43,6 +47,7 @@ export const projects: Project[] = [
 		description:
 			"Python CLI that runs git add, commit, and push in a single command.",
 		iframe: false,
+		image: "/assets/images/projects/GitPush.png",
 	},
 	{
 		name: "Starbits",
@@ -61,6 +66,7 @@ export const projects: Project[] = [
 		description:
 			"Chromium extension to control the playback speed of any video without limits (handy on YouTube).",
 		iframe: false,
+		image: "/assets/images/projects/Video Speed Control.png",
 	},
 	{
 		name: "Windows Explorer Toggle",
@@ -81,6 +87,7 @@ export const projects: Project[] = [
 		description:
 			"Create reusable and reactive Web Components using Custom Element API.",
 		iframe: false,
+		image: "/assets/images/projects/custom-html-element.png",
 	},
 	{
 		name: "Input Transform",
@@ -88,6 +95,7 @@ export const projects: Project[] = [
 		description:
 			"JavaScript library that provides various input transformations, such as formatting text, validating file uploads, and converting images to Base64 or WebP format.",
 		iframe: false,
+		image: "/assets/images/projects/Input Transform.png",
 	},
 	{
 		name: "Generative Art Gallery",
@@ -101,5 +109,6 @@ export const projects: Project[] = [
 		description:
 			"A collection of Minecraft mods I've created, with over 3 million downloads.",
 		iframe: false,
+		image: "/assets/images/projects/Minecraft Mods.png",
 	},
 ];
