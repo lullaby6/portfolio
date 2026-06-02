@@ -4,6 +4,24 @@ import Layout from "@/layouts/Layout.astro";
 import Background from "@/components/Background.astro";
 import Card from "@/components/Card.astro";
 import { projects } from "@/data/projects";
+
+const COLUMNS = 4;
+
+function reorderForColumns<T>(items: T[], columns: number): T[] {
+	const rows = Math.ceil(items.length / columns);
+	const ordered: T[] = [];
+
+	for (let col = 0; col < columns; col++) {
+		for (let row = 0; row < rows; row++) {
+			const index = row * columns + col;
+			if (index < items.length) ordered.push(items[index]);
+		}
+	}
+
+	return ordered;
+}
+
+const orderedProjects = reorderForColumns(projects, COLUMNS);
 ---
 
 <Layout>
@@ -26,7 +44,7 @@ import { projects } from "@/data/projects";
 			<div
 				class="columns-1 sm:columns-2 lg:columns-3 2xl:columns-4 gap-4 [column-fill:_balance]">
 				{
-					projects.map((project) => (
+					orderedProjects.map((project) => (
 						<a
 							class="group block mb-4 break-inside-avoid"
 							href={project.href}

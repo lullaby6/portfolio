@@ -108,4 +108,11 @@ export const projects: Project[] = [
 			"A collection of Minecraft mods I've created, with over 3 million downloads.",
 		image: "/assets/images/projects/Minecraft Mods.png",
 	},
+	{
+		name: "MC Block Creator",
+		href: "https://lullaby6.github.io/mc-block-creator/",
+		description:
+			"Minecraft Web Tool to generate custom blocks with display entities built with React.",
+		image: "/assets/images/projects/MC Block Creator.png",
+	},
 ];
