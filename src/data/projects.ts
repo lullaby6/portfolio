@@ -22,7 +22,7 @@ export const projects: Project[] = [
 		href: "https://www.npmjs.com/package/locale-drive",
 		description:
 			'Web app to share and transfer files across your local network, like a "Google Drive" for your LAN, built with Express.js and React.',
-		tags: ["NPM Package", "Express.js", "React", "JavaScript"],
+		tags: ["NPM Package", "JavaScript", "Express.js", "React"],
 		// image: "/assets/images/projects/Locale Drive.webp", // npm page, no preview
 	},
 	{
@@ -36,7 +36,7 @@ export const projects: Project[] = [
 		name: "Sviewer",
 		href: "https://lullaby6.github.io/sviewer",
 		description: "Image Viewer built with Vue3 and Tailwind CSS.",
-		tags: ["Vue", "Tailwind CSS"],
+		tags: ["JavaScript", "Vue", "Tailwind CSS"],
 		// image: "/assets/images/projects/Sviewer.webp",
 	},
 	{
@@ -91,7 +91,7 @@ export const projects: Project[] = [
 		href: "https://www.npmjs.com/package/express-dir-routing",
 		description:
 			"A file-based routing system for express.js using directories like NextJS 13 or SvelteKit.",
-		tags: ["NPM Package", "Express.js", "JavaScript"],
+		tags: ["NPM Package", "JavaScript", "Express.js"],
 		// image: "/assets/images/projects/express-dir-routing.webp", // npm page, no preview
 	},
 	{
@@ -115,7 +115,7 @@ export const projects: Project[] = [
 		href: "https://lullaby6.github.io/generative-art-gallery/",
 		description:
 			"A growing gallery of my creative coding experiments, I'm just getting started.",
-		tags: ["JavaScript", "Creative Coding", "Tailwind CSS"],
+		tags: ["JavaScript", "Tailwind CSS", "Creative Coding"],
 		// image: "/assets/images/projects/Generative Art Gallery.webp",
 	},
 	{
@@ -131,7 +131,7 @@ export const projects: Project[] = [
 		href: "https://lullaby6.github.io/mc-block-creator/",
 		description:
 			"Minecraft Web Tool to generate custom blocks with display entities built with React.",
-		tags: ["React", "Minecraft", "Tailwind CSS"],
+		tags: ["JavaScript", "React", "Minecraft", "Tailwind CSS"],
 		// image: "/assets/images/projects/MC Block Creator.webp",
 	},
 ];
