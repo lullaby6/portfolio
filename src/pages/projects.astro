@@ -32,32 +32,16 @@ import { projects } from "@/data/projects";
 							href={project.href}
 							target="_blank">
 							<Card class="!p-0 h-full">
-								{project.iframe === false
-									? project.image && (
-											<div class="relative h-48 overflow-hidden border-b border-white/10 bg-neutral-900">
-												<img
-													src={project.image}
-													alt={`${project.name} preview`}
-													loading="lazy"
-													class="w-full h-full object-cover object-top select-none group-hover:scale-105 transition-transform duration-300"
-												/>
+								<div class="relative h-48 overflow-hidden border-b border-white/10 bg-neutral-900">
+									<img
+										src={project.image}
+										alt={`${project.name} preview`}
+										loading="lazy"
+										class="w-full h-full object-cover object-top select-none group-hover:scale-105 transition-transform duration-300"
+									/>
 
-												<span class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors" />
-											</div>
-										)
-									: (
-										<div class="relative h-48 overflow-hidden border-b border-white/10">
-											<iframe
-												src={project.href}
-												title={`${project.name} preview`}
-												tabindex="-1"
-												loading="lazy"
-												class="absolute top-0 left-0 w-[200%] h-[200%] origin-top-left scale-50 border-0 pointer-events-none select-none bg-neutral-900"
-											/>
-
-											<span class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors" />
-										</div>
-									)}
+									<span class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors" />
+								</div>
 
 								<div class="flex flex-col gap-2 relative p-4 3xl:p-6">
 									<span class="absolute top-4 right-4 3xl:top-6 3xl:right-6 opacity-50 group-hover:opacity-100 transition-opacity">

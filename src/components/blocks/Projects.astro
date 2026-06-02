@@ -8,12 +8,26 @@ import Card from "@/components/Card.astro";
 		class="group block w-full h-full relative cursor-pointer"
 		href="/projects"
 		aria-label="View all projects">
-		<iframe
-			src="/projects"
-			title="Projects preview"
-			tabindex="-1"
-			class="absolute inset-0 w-full h-full border-0 pointer-events-none select-none overflow-hidden">
-		</iframe>
+		{
+			/*
+			Previously a live <iframe src="/projects"> was used as the preview.
+			It was replaced with a static screenshot for performance: the iframe
+			loaded the entire /projects page (and all 15 project images) inside
+			this card. A single image is far lighter. To revert, restore:
+
+			<iframe
+				src="/projects"
+				title="Projects preview"
+				tabindex="-1"
+				class="absolute inset-0 w-full h-full border-0 pointer-events-none select-none overflow-hidden">
+			</iframe>
+		*/
+		}
+		<img
+			src="/assets/images/projects/Projects2.png"
+			alt="Projects preview"
+			class="absolute inset-0 w-full h-full object-cover object-top select-none"
+		/>
 
 		<span
 			class="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors">
