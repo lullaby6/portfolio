@@ -2,6 +2,7 @@ export interface Project {
 	name: string;
 	href: string;
 	description: string;
+	iframe?: boolean;
 }
 
 export const projects: Project[] = [
@@ -10,17 +11,20 @@ export const projects: Project[] = [
 		href: "https://github.com/lullaby6/zschema",
 		description:
 			"PHP library to validate schemas and data types, inspired by Zod from TypeScript.",
+		iframe: false,
 	},
 	{
 		name: "Locale Drive",
 		href: "https://www.npmjs.com/package/locale-drive",
 		description:
 			'Web app to share and transfer files across your local network, like a "Google Drive" for your LAN, built with Express.js and React.',
+		iframe: false,
 	},
 	{
 		name: "ChessGPT",
 		href: "https://github.com/lullaby6/ChessGPT",
 		description: "Python game that lets you play chess against ChatGPT.",
+		iframe: false,
 	},
 	{
 		name: "Sviewer",
@@ -38,6 +42,7 @@ export const projects: Project[] = [
 		href: "https://github.com/lullaby6/git-push",
 		description:
 			"Python CLI that runs git add, commit, and push in a single command.",
+		iframe: false,
 	},
 	{
 		name: "Starbits",
@@ -55,6 +60,7 @@ export const projects: Project[] = [
 		href: "https://github.com/lullaby6/video-speed-control",
 		description:
 			"Chromium extension to control the playback speed of any video without limits (handy on YouTube).",
+		iframe: false,
 	},
 	{
 		name: "Windows Explorer Toggle",
@@ -67,18 +73,21 @@ export const projects: Project[] = [
 		href: "https://www.npmjs.com/package/custom-html-element",
 		description:
 			"A file-based routing system for express.js using directories like NextJS 13 or SvelteKit.",
+		iframe: false,
 	},
 	{
 		name: "custom-html-element",
 		href: "https://www.npmjs.com/package/custom-html-element",
 		description:
 			"Create reusable and reactive Web Components using Custom Element API.",
+		iframe: false,
 	},
 	{
 		name: "Input Transform",
 		href: "https://www.npmjs.com/package/input-transform",
 		description:
 			"JavaScript library that provides various input transformations, such as formatting text, validating file uploads, and converting images to Base64 or WebP format.",
+		iframe: false,
 	},
 	{
 		name: "Generative Art Gallery",
@@ -91,5 +100,6 @@ export const projects: Project[] = [
 		href: "https://www.curseforge.com/members/lullaby6/projects?sortBy=TotalDownloads",
 		description:
 			"A collection of Minecraft mods I've created, with over 3 million downloads.",
+		iframe: false,
 	},
 ];
