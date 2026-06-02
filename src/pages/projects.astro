@@ -50,16 +50,18 @@ const orderedProjects = reorderForColumns(projects, COLUMNS);
 							href={project.href}
 							target="_blank">
 							<Card class="!p-0 h-full">
-								<div class="relative aspect-video overflow-hidden bg-neutral-900">
-									<img
-										src={project.image}
-										alt={`${project.name} preview`}
-										loading="lazy"
-										class="w-full h-full object-cover object-top select-none group-hover:scale-105 transition duration-300"
-									/>
+								{project.image && (
+									<div class="relative aspect-video overflow-hidden bg-neutral-900">
+										<img
+											src={project.image}
+											alt={`${project.name} preview`}
+											loading="lazy"
+											class="w-full h-full object-cover object-top select-none group-hover:scale-105 transition duration-300"
+										/>
 
-									<span class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors" />
-								</div>
+										<span class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors" />
+									</div>
+								)}
 
 								<div class="flex flex-col gap-2 relative p-4 3xl:p-6">
 									<span class="absolute top-4 right-4 3xl:top-6 3xl:right-6 opacity-50 group-hover:opacity-100 transition-opacity">
@@ -72,6 +74,14 @@ const orderedProjects = reorderForColumns(projects, COLUMNS);
 									<h2 class="text-xl text-balance inter-600 text-purple-800 pr-7 group-hover:opacity-50 transition-opacity">
 										{project.name}
 									</h2>
+
+									<div class="flex flex-wrap gap-1.5">
+										{project.tags.map((tag) => (
+											<span class="rounded-full bg-white/5 border border-white/10 px-2 py-0.5 text-xs text-neutral-300">
+												{tag}
+											</span>
+										))}
+									</div>
 
 									<p class="text-neutral-400 text-pretty text-sm">
 										{project.description}
