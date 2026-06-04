@@ -10,6 +10,14 @@ export interface Project {
 
 export const projects: Project[] = [
 	{
+		name: "Menuvir",
+		href: "https://menuvir.com",
+		description:
+			"SaaS to create and manage digital menus for restaurants, built with Laravel, React, and Astro.",
+		tags: ["PHP", "Laravel", "JavaScript", "Astro", "React", "Tailwind CSS", "PostgreSQL", "Docker"],
+		// image: "/assets/images/projects/zschema.webp", // GitHub page, no preview
+	},
+	{
 		name: "ZSchema",
 		href: "https://github.com/lullaby6/zschema",
 		description:
