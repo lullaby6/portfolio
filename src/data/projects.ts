@@ -11,7 +11,7 @@ export interface Project {
 export const projects: Project[] = [
 	{
 		name: "Menuvir",
-		href: "https://menuvir.com",
+		href: "https://menuvir.com/en",
 		description:
 			"SaaS to create and manage digital menus for restaurants, built with Laravel, React, and Astro.",
 		tags: ["PHP", "Laravel", "JavaScript", "Astro", "React", "Tailwind CSS", "PostgreSQL", "Docker"],
