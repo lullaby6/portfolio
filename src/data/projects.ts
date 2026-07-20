@@ -65,7 +65,7 @@ export const projects: Project[] = [
 	},
 	{
 		name: "Starbits",
-		href: "https://starbits.site",
+		href: "https://lullaby6.itch.io/starbits",
 		description: "2D bullet hell game built with Phaser.js.",
 		tags: ["Game", "JavaScript", "Phaser"],
 		// image: "/assets/images/projects/Starbits.webp",
