@@ -126,20 +126,20 @@ export const projects: Project[] = [
 		tags: ["JavaScript", "Tailwind CSS", "Creative Coding"],
 		// image: "/assets/images/projects/Generative Art Gallery.webp",
 	},
-	{
-		name: "Minecraft Mods",
-		href: "https://www.curseforge.com/members/lullaby6/projects?sortBy=TotalDownloads",
-		description:
-			"A collection of Minecraft mods I've created, with over 3 million downloads.",
-		tags: ["Data-Packs", "Minecraft"],
-		// image: "/assets/images/projects/Minecraft Mods.webp",
-	},
-	{
-		name: "MC Block Creator",
-		href: "https://lullaby6.github.io/mc-block-creator/",
-		description:
-			"Minecraft Web Tool to generate custom blocks with display entities built with React.",
-		tags: ["JavaScript", "React", "Minecraft", "Tailwind CSS"],
-		// image: "/assets/images/projects/MC Block Creator.webp",
-	},
+	// {
+	// 	name: "Minecraft Mods",
+	// 	href: "https://www.curseforge.com/members/lullaby6/projects?sortBy=TotalDownloads",
+	// 	description:
+	// 		"A collection of Minecraft mods I've created, with over 3 million downloads.",
+	// 	tags: ["Data-Packs", "Minecraft"],
+	// 	// image: "/assets/images/projects/Minecraft Mods.webp",
+	// },
+	// {
+	// 	name: "MC Block Creator",
+	// 	href: "https://lullaby6.github.io/mc-block-creator/",
+	// 	description:
+	// 		"Minecraft Web Tool to generate custom blocks with display entities built with React.",
+	// 	tags: ["JavaScript", "React", "Minecraft", "Tailwind CSS"],
+	// 	// image: "/assets/images/projects/MC Block Creator.webp",
+	// },
 ];
