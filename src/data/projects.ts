@@ -70,14 +70,14 @@ export const projects: Project[] = [
 		tags: ["Game", "JavaScript", "Phaser"],
 		// image: "/assets/images/projects/Starbits.webp",
 	},
-	{
-		name: "Fondo de Cine",
-		href: "https://fondodecine.com.ar",
-		description:
-			"Landing page built with Astro for an independent film festival.",
-		tags: ["Landing Page", "Astro", "Tailwind CSS"],
-		// image: "/assets/images/projects/Fondo de Cine.webp",
-	},
+	// {
+	// 	name: "Fondo de Cine",
+	// 	href: "https://fondodecine.com.ar",
+	// 	description:
+	// 		"Landing page built with Astro for an independent film festival.",
+	// 	tags: ["Landing Page", "Astro", "Tailwind CSS"],
+	// 	// image: "/assets/images/projects/Fondo de Cine.webp",
+	// },
 	{
 		name: "Video Speed Control",
 		href: "https://github.com/lullaby6/video-speed-control",
@@ -118,14 +118,14 @@ export const projects: Project[] = [
 		tags: ["NPM Package", "JavaScript"],
 		// image: "/assets/images/projects/Input Transform.webp", // npm page, no preview
 	},
-	{
-		name: "Generative Art Gallery",
-		href: "https://lullaby6.github.io/generative-art-gallery/",
-		description:
-			"A growing gallery of my creative coding experiments, I'm just getting started.",
-		tags: ["JavaScript", "Tailwind CSS", "Creative Coding"],
-		// image: "/assets/images/projects/Generative Art Gallery.webp",
-	},
+	// {
+	// 	name: "Generative Art Gallery",
+	// 	href: "https://lullaby6.github.io/generative-art-gallery/",
+	// 	description:
+	// 		"A growing gallery of my creative coding experiments, I'm just getting started.",
+	// 	tags: ["JavaScript", "Tailwind CSS", "Creative Coding"],
+	// 	// image: "/assets/images/projects/Generative Art Gallery.webp",
+	// },
 	// {
 	// 	name: "Minecraft Mods",
 	// 	href: "https://www.curseforge.com/members/lullaby6/projects?sortBy=TotalDownloads",
