@@ -18,6 +18,14 @@ export const projects: Project[] = [
 		// image: "/assets/images/projects/zschema.webp", // GitHub page, no preview
 	},
 	{
+		name: "Spaced Repetition Study",
+		href: "https://github.com/lullaby6/spaced-repetition-study",
+		description:
+			"Web app to memorize exam answers with active recall and spaced repetition.",
+		tags: ["Web App", "JavaScript"],
+		// image: "/assets/images/projects/spaced-repetition-study.webp", // GitHub page, no preview
+	},
+	{
 		name: "ZSchema",
 		href: "https://github.com/lullaby6/zschema",
 		description:
