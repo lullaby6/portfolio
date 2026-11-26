@@ -27,7 +27,7 @@ export const projects: Project[] = [
 	},
 	{
 		name: "Spaced Repetition Study",
-		href: "https://github.com/lullaby6/spaced-repetition-study",
+		href: "https://lullaby6.github.io/spaced-repetition-study/",
 		description:
 			"Web app to memorize exam answers with active recall and spaced repetition.",
 		tags: ["Web App", "JavaScript"],
