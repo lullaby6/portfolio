@@ -14,7 +14,7 @@ export const projects: Project[] = [
 		href: "https://menuvir.com/en",
 		description:
 			"SaaS to create and manage digital menus for restaurants, built with Laravel, React, and Astro.",
-		tags: ["PHP", "Laravel", "JavaScript", "Astro", "React", "Tailwind CSS", "PostgreSQL", "Docker"],
+		tags: ["SaaS", "PHP", "Laravel", "JavaScript", "Astro", "React", "Tailwind CSS", "PostgreSQL", "Docker"],
 		// image: "/assets/images/projects/zschema.webp", // GitHub page, no preview
 	},
 	{
