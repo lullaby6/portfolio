@@ -18,6 +18,14 @@ export const projects: Project[] = [
 		// image: "/assets/images/projects/zschema.webp", // GitHub page, no preview
 	},
 	{
+		name: "Locale Drive",
+		href: "https://lullaby6.github.io/locale-drive",
+		description:
+			'Web app to share and transfer files across your local network, like a "Google Drive" for your LAN, built with Express.js and React.',
+		tags: ["NPM Package", "JavaScript", "Express.js", "React"],
+		// image: "/assets/images/projects/Locale Drive.webp", // npm page, no preview
+	},
+	{
 		name: "Spaced Repetition Study",
 		href: "https://github.com/lullaby6/spaced-repetition-study",
 		description:
@@ -32,14 +40,6 @@ export const projects: Project[] = [
 			"PHP library to validate schemas and data types, inspired by Zod from TypeScript.",
 		tags: ["PHP", "Composer Package"],
 		// image: "/assets/images/projects/zschema.webp", // GitHub page, no preview
-	},
-	{
-		name: "Locale Drive",
-		href: "https://www.npmjs.com/package/locale-drive",
-		description:
-			'Web app to share and transfer files across your local network, like a "Google Drive" for your LAN, built with Express.js and React.',
-		tags: ["NPM Package", "JavaScript", "Express.js", "React"],
-		// image: "/assets/images/projects/Locale Drive.webp", // npm page, no preview
 	},
 	{
 		name: "ChessGPT",
