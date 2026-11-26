@@ -26,12 +26,29 @@ export const projects: Project[] = [
 		// image: "/assets/images/projects/Locale Drive.webp", // npm page, no preview
 	},
 	{
+		name: "Windows Explorer Toggle",
+		href: "https://lullaby6.github.io/windows-explorer-toggle",
+		description:
+			"A C# windows desktop app to disable Windows Explorer to reduce RAM usage.",
+		tags: ["Desktop App", "C#", "Tailwind CSS"],
+		// image: "/assets/images/projects/Windows Explorer Toggle.webp",
+	},
+	{
 		name: "Spaced Repetition Study",
 		href: "https://lullaby6.github.io/spaced-repetition-study/",
 		description:
 			"Web app to memorize exam answers with active recall and spaced repetition.",
 		tags: ["Web App", "JavaScript"],
 		// image: "/assets/images/projects/spaced-repetition-study.webp", // GitHub page, no preview
+	},
+	,
+	{
+		name: "Fondo de Cine",
+		href: "https://fondodecine.com.ar",
+		description:
+			"Landing page built with Astro for an independent film festival.",
+		tags: ["Landing Page", "Astro", "Tailwind CSS"],
+		// image: "/assets/images/projects/Fondo de Cine.webp",
 	},
 	{
 		name: "ZSchema",
@@ -79,28 +96,12 @@ export const projects: Project[] = [
 		// image: "/assets/images/projects/Starbits.webp",
 	},
 	{
-		name: "Fondo de Cine",
-		href: "https://fondodecine.com.ar",
-		description:
-			"Landing page built with Astro for an independent film festival.",
-		tags: ["Landing Page", "Astro", "Tailwind CSS"],
-		// image: "/assets/images/projects/Fondo de Cine.webp",
-	},
-	{
 		name: "Video Speed Control",
 		href: "https://github.com/lullaby6/video-speed-control",
 		description:
 			"Chromium extension to control the playback speed of any video without limits (handy on YouTube).",
 		tags: ["Chrome Extension", "JavaScript"],
 		// image: "/assets/images/projects/Video Speed Control.webp", // GitHub page, no preview
-	},
-	{
-		name: "Windows Explorer Toggle",
-		href: "https://lullaby6.github.io/windows-explorer-toggle",
-		description:
-			"A C# windows desktop app to disable Windows Explorer to reduce RAM usage.",
-		tags: ["Desktop App", "C#", "Tailwind CSS"],
-		// image: "/assets/images/projects/Windows Explorer Toggle.webp",
 	},
 	{
 		name: "express-dir-routing",
