@@ -41,7 +41,6 @@ export const projects: Project[] = [
 		tags: ["Web App", "JavaScript"],
 		// image: "/assets/images/projects/spaced-repetition-study.webp", // GitHub page, no preview
 	},
-	,
 	{
 		name: "Fondo de Cine",
 		href: "https://fondodecine.com.ar",
