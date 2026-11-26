@@ -22,7 +22,7 @@ export const projects: Project[] = [
 		href: "https://lullaby6.github.io/locale-drive",
 		description:
 			'Web app to share and transfer files across your local network, like a "Google Drive" for your LAN, built with Express.js and React.',
-		tags: ["NPM Package", "JavaScript", "Express.js", "React"],
+		tags: ["Web App", "NPM Package", "JavaScript", "Express.js", "React"],
 		// image: "/assets/images/projects/Locale Drive.webp", // npm page, no preview
 	},
 	{
