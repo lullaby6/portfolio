@@ -97,6 +97,21 @@ html {
     background-color: #000;
 }
 
+/* Page shown as a static preview inside an iframe (see Layout.astro). */
+html[data-embed] {
+    overflow: hidden;
+    scrollbar-width: none;
+}
+
+html[data-embed] ::-webkit-scrollbar {
+    display: none;
+}
+
+html[data-embed] .bg-blob,
+html[data-embed] .animate-fadein {
+    animation: none;
+}
+
 ::-webkit-scrollbar {
     width: 16px;
 }

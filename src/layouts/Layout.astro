@@ -14,6 +14,12 @@ import "@/styles/global.css";
 		<meta name="generator" content={Astro.generator} />
 		<title>lullaby6 | portfolio</title>
 
+		<!-- Flags pages rendered inside an iframe (the home page's Projects
+		     preview) so they can skip animations and scrollbars. -->
+		<script is:inline>
+			if (window.self !== window.top) document.documentElement.dataset.embed = "";
+		</script>
+
 		<meta
 			name="description"
 			content="Software Developer, building websites, games, libraries and more."

@@ -1,18 +1,33 @@
 ---
 import { IconArrowUpRight } from "@tabler/icons-react";
 import Card from "@/components/Card.astro";
+
+const projectsUrl = `${import.meta.env.BASE_URL.replace(/\/$/, "")}/projects`;
 ---
 
 <Card class="!p-0 md:col-span-3 md:row-span-3 md:col-start-3 md:row-start-1">
 	<a
-		class="group block w-full aspect-video md:aspect-auto md:h-full relative cursor-pointer"
-		href="/projects"
+		class="group block w-full aspect-video md:aspect-auto md:h-full relative cursor-pointer overflow-hidden"
+		href={projectsUrl}
 		aria-label="View all projects">
+		<!-- Placeholder shown until the live iframe has loaded. -->
 		<img
 			src="/assets/images/projects/Projects.avif"
 			alt="Projects preview"
-			class="absolute inset-0 w-full h-full object-cover object-top select-none transition duration-300"
+			class="absolute inset-0 w-full h-full object-cover object-top select-none"
 		/>
+
+		<!-- Live preview of /projects, rendered at 2x the card size and scaled
+		     down so it shows the desktop layout. src is set after the home page
+		     finishes loading so it doesn't slow down the first paint. -->
+		<iframe
+			data-projects-preview
+			data-src={projectsUrl}
+			title="Projects preview"
+			tabindex="-1"
+			aria-hidden="true"
+			class="absolute top-0 left-0 w-[200%] h-[200%] origin-top-left scale-50 border-0 pointer-events-none select-none opacity-0 transition-opacity duration-500"
+		></iframe>
 
 		<span
 			class="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors">
@@ -29,3 +44,22 @@ import Card from "@/components/Card.astro";
 		</span>
 	</a>
 </Card>
+
+<script>
+	const iframe = document.querySelector("iframe[data-projects-preview]");
+
+	if (iframe instanceof HTMLIFrameElement && iframe.dataset.src) {
+		const src = iframe.dataset.src;
+
+		iframe.addEventListener("load", () => iframe.classList.remove("opacity-0"), {
+			once: true,
+		});
+
+		const start = () => {
+			iframe.src = src;
+		};
+
+		if (document.readyState === "complete") start();
+		else window.addEventListener("load", start, { once: true });
+	}
+</script>
